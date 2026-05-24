@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.navbar{
+    width: 100%;
+    height: 12vh;
+    padding-top: 20px;
+    position:fixed;
+}
+.logo{
+    display: inline-block;
+    width: 20%;
+    padding-left: 60px;
+    color: #374151;
+    font-weight: bold;  
+    font-size: 34px;
+}
+.navlinks{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.navlinks a{
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.navlinks a:hover{
+    color: #374151;
+}
+.username{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+.username button{
+    padding: 10px 20px;
+    background-color: #e0f2fe;
+    color: #0ea5e9;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.username button:hover{
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+.hamburger{
+        display: none;
+}
+.mobile-menu{
+    display:none;
+}
+.hero{
+    width: 100%;
+    height: 88vh;
+    /* font-size: 0; */
+}
+.left{
+    display: inline-block;
+    width: 50vw;
+    height: 100vh;
+    vertical-align: top;
+    padding-top: 120px;
+    padding-left: 80px;
+}
+.left h1{
+    font-size: 60px;
+    line-height: 85px;
+    color: #516279;
+}
+.left span{
+    color: #0ea5e9;
+}
+.left p{
+    font-size: 26px;
+    color: #6b7a9a;
+    line-height: 35px;
+    width: 90%;
+    margin-top: 20px;
+}
+.left button{
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color: #0ea5e9;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.left button:hover{
+    background-color: #0b8ac9;
+}
+.right{
+    display: inline-block;
+    width: 45vw;
+    height: 100vh;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 100px;
+}
+.right img{
+    width: 500px;
+    height: 500px;
+}
+@media (max-width: 768px) {
+    .navbar{
+        /* height: auto; */
+        /* padding: 15px 20px;  */
+        /* background-color: #ffffff;  */
+        display: flex;
+        background-color: #ffffff;
+        /* justify-content: space-between;
+        align-items: flex-start; */
+    }
+    .hamburger{
+        display: flex;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #374151;
+        margin-right:10px ;
+    }
+    .mobile-menu{
+        width: 180px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background: #e0f2fe;
+        border-radius: 10px;
+        padding: 20px;
+        display: none;
+    }
+    .mobile-menu a{
+        display: block;
+        color: #0ea5e9;
+        text-decoration: none;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .mobile-menu a:hover{
+        background-color: #0ea5e9;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .hamburger:focus + .mobile-menu{
+        display: block;
+    }
+    .logo{
+        font-size: 32px;
+        text-align: left;
+        padding-left: 1%;
+    }
+    .navlinks{
+        display: none;
+    }
+    .username{
+        width: 100%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .hero{
+        height: auto;
+    }
+    .left{
+        padding-left: 1%;
+        width: 100%;
+        height: auto;
+    }
+    .left h1{
+    font-size: 33px;
+    line-height: 38px;
+    
+    }
+    .left p{
+        font-size: 17px;
+        line-height: 25px;
+        width: 90%;
+        margin-top: 8px;
+    }
+    .left button{
+        border-radius: 20px;
+        padding: 25px 45px;
+        font-size: 18px;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    .right img{
+        width: 400px;
+        height: 400px;
+    }
+
+}
